@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/details.css">
+    <link rel="stylesheet" href="css/res.css">
+</head>
+
+<body class="weather">
+    <div class="loader-container" id="loader">
+        <div class="loader"></div>
+
+    </div>
+    <header class="">
+        <nav class="navbar navbar-expand  ">
+            <div class="container">
+
+                <a class="navbar-brand" href="#">
+                    <img src="img/weather.png" class="img-fluid logo">
+                </a>
+                <div class="d-flex justify-content-between"> <select class="dropdown header__dropdown" name="units"
+                        id="allUnits">
+                        <option value="" disabled hidden>Units</option>
+                        <option value="C" selected>&deg;C</option>
+                        <option value="F">&deg;F</option>
+                    </select>
+
+                    <div>
+                        <!-- From Uiverse.io by mobinkakei -->
+                        <div class="toggleWrapper">
+                            <input class="input" id="dn" type="checkbox" />
+                            <label class="toggle" for="dn">
+                                <span class="toggle__handler details">
+                                    <span class="crater crater--1"></span>
+                                    <span class="crater crater--2"></span>
+                                    <span class="crater crater--3"></span>
+                                </span>
+                                <span class="star star--1"></span>
+                                <span class="star star--2"></span>
+                                <span class="star star--3"></span>
+                                <span class="star star--4"></span>
+                                <span class="star star--5"></span>
+                                <span class="star star--6"></span>
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </nav>
+        <div class="container">
+            <h1 class="title text-center my-4 "> How's the sky looking today?</h1>
+            <div class="hero__search  d-sm-flex justify-content-center mb-3">
+                <input class="hero__textbox" type="text" name="search" id="txtSearch"
+                    placeholder="Search for a place..." value="Cairo">
+                <button id="btnSearch" class="hero__button" type="submit">Search</button>
+                <!-- From Uiverse.io by satyamchaudharydev -->
+                <button class="back" >
+                    <div class="text mx-2">
+                        <span>Back</span>
+                        <span>to</span>
+                        <span>Home</span>
+                    </div>
+                    <div class="clone mx-2">
+                        <span>Back</span>
+                        <span>to</span>
+                        <span>Home</span>
+                    </div>
+                    <svg stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" fill="none" class="h-6 w-6"
+                        xmlns="http://www.w3.org/2000/svg" width="20px">
+                        <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linejoin="round" stroke-linecap="round"></path>
+                    </svg>
+                </button>
+
+            </div>
+        </div>
+
+
+    </header>
+
+    <section>
+
+
+
+        <div class="container">
+
+
+
+            <div class="dashboard ">
+
+
+
+                <div class="current">
+
+                    <div class="current__weather py-5  ">
+
+                        <div class="current__location">
+                            <h2 id="CityCountry" class="current__city"></h2>
+                            <h6 id="CurrDate" class="current__date"></h6>
+                        </div>
+                        <div class="current__info d-flex m-2 ">
+                            <img class="current__icon" src="img/cloudy.png" alt="" width="50" height="50">
+                            <div class="current__temp my-4"><span id="CurrTemp"></span>&deg;</div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="current__conditions">
+                        <div class="block current__condition">
+                            <p class="current__condition-title">Feels Like</p>
+                            <p class="current__condition-value"><span id="pFeelsLike">20</span>&deg;</p>
+                        </div>
+                        <div class="block current__condition">
+                            <p class="current__condition-title">Humidity</p>
+                            <p class="current__condition-value"><span id="pHumidity">88</span>%</p>
+                        </div>
+                        <div class="block current__condition">
+                            <p class="current__condition-title">Wind</p>
+                            <p id="pWind" class="current__condition-value">20 km/h</p>
+                        </div>
+                        <div class="block current__condition">
+                            <p class="current__condition-title">Precipitation</p>
+                            <p id="pPrecipitation" class="current__condition-value">0 mm</p>
+                        </div>
+                    </div>
+                    <div class="daily">
+                        <h2 class="section__title daily__title text-center p-3 ">Daily forecast</h2>
+                        <div class="daily__forecast">
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="hourly">
+                    <div class="container">
+                        <div class="hourly__content">
+                            <div class="hourly__header d-flex justify-content-between align-items-center">
+                                <h2 class="section__title hourly__title  ">Hourly forecast</h2>
+                                <select class="dropdown hourly__select" name="hourly__select" id="ddlDay">
+                                </select>
+                            </div>
+
+                            <div class="hourly__hours p-4">
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="js/details.js"></script>
+
+    <script src="js/theme.js" defer></script>
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

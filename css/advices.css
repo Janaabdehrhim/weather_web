@@ -1,0 +1,452 @@
+:root {
+    --color-text: #ebd7a5;
+
+}
+
+
+
+
+html.light body {
+    background-color: rgb(206, 244, 253);
+    --color-text: #1a2457;
+}
+
+html.dark body {
+    background-color: var(--color-main-bg);
+    --color-text: #ffe9b0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header .navbar {
+    position: absolute;
+    z-index: 800000;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+
+header nav.navbar .navbar-brand {
+    width: 7%;
+
+}
+
+header nav.navbar .navbar-collapse .nav-item .nav-link {
+    letter-spacing: 1.5px;
+    border-radius: 10px;
+    font-size: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+header nav.navbar .navbar-collapse .nav-item .nav-link span:not(.text) {
+    display: block;
+    width: 100%;
+    height: 33.33%;
+    top: 0%;
+    background-color: var(--color-panel-bg-light);
+    position: absolute;
+    z-index: 1;
+
+
+}
+
+header nav.navbar .navbar-collapse .nav-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+header nav.navbar .navbar-collapse .nav-item .nav-link span {
+    transition-duration: 0.5s;
+}
+
+header nav.navbar .navbar-collapse .nav-item .nav-link span.top {
+    top: 0%;
+    left: -100%;
+    border-top-left-radius: 10px;
+}
+
+header nav.navbar .navbar-collapse .nav-item .nav-link span.middle {
+    top: 33.33%;
+    right: -100%;
+}
+
+header nav.navbar .navbar-collapse .nav-item .nav-link span.bottom {
+    top: 66.66%;
+    left: -100%;
+    border-bottom-right-radius: 10px;
+}
+
+header nav.navbar .navbar-collapse .nav-item .nav-link:hover span.top {
+    left: 0%;
+}
+
+header nav.navbar .navbar-collapse .nav-item .nav-link:hover span.middle {
+    right: 0%;
+}
+
+header nav.navbar .navbar-collapse .nav-item .nav-link:hover span.bottom {
+    left: 0%;
+}
+
+header nav.navbar .navbar-collapse .nav-item .nav-link span.text {
+    position: relative;
+    z-index: 3;
+    color: var(--color-text);
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.toggleWrapper {
+    margin-left: 15px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.moon-section {
+    font-family: 'Inter', sans-serif;
+    color: var(--color-text);
+}
+
+.moon-info {
+    padding-top: 50px;
+}
+
+.moon-visual img {
+    width: 550px;
+    filter:
+        drop-shadow(0 0 80px rgba(212, 175, 55, 0.6)) drop-shadow(0 0 150px rgba(212, 175, 55, 0.4)) drop-shadow(0 0 220px rgba(212, 175, 55, 0.2));
+    animation: glow 4s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        filter:
+            drop-shadow(0 0 60px rgba(212, 175, 55, 0.4)) drop-shadow(0 0 120px rgba(212, 175, 55, 0.3));
+    }
+
+    to {
+        filter:
+            drop-shadow(0 0 120px rgba(212, 175, 55, 0.7)) drop-shadow(0 0 220px rgba(212, 175, 55, 0.4));
+    }
+}
+
+
+
+
+.moon-info {
+    margin-top: 20%;
+}
+
+.moon-info h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 48px;
+    color: var(--color-text);
+    letter-spacing: 8px;
+
+}
+
+.illumination {
+    margin-top: 20px;
+    color: var(--color-text);
+}
+
+.divider {
+    width: 200px;
+    height: 1px;
+    background: #D4AF37;
+    margin: 30px 0;
+    opacity: 0.4;
+}
+
+.date {
+    font-size: 14px;
+    color: #6f6f6f;
+}
+
+html.light body {
+    background-color: rgb(206, 244, 253);
+    --color-text: #1a2457;
+    --cell-bg: #feffffd1;
+    --cell-border: #96e7ea;
+}
+
+html.dark body {
+    background-color: var(--color-main-bg);
+    --color-text: #E8D8B0;
+    --cell-bg: #395381;
+    --cell-border: #D4AF37;
+}
+
+.moon_section {
+    overflow-x: hidden;
+    border-radius: 2px;
+    border: 1px solid #D4AF37;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+
+}
+
+
+.calendar {
+    width: 100%;
+    max-width: 500px;
+    /* margin: 40px auto; */
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    border: 1px solid var(--cell-border);
+    font-family: sans-serif;
+}
+
+.calendar .day {
+    height: 90px;
+    border: 1px solid var(--cell-border);
+    background-color: var(--cell-bg);
+    color: var(--color-text);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 8px;
+    font-size: 18px;
+}
+
+.head {
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+.empty {
+    background-color: transparent;
+    border: 1px solid var(--cell-border);
+}
+
+.calendar .day {
+    height: 90px;
+    border: 1px solid var(--cell-border);
+    background-color: var(--cell-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar .day img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.2));
+}
+
+.head {
+    height: 40px;
+    font-weight: bold;
+    color: var(--color-text);
+    background: transparent;
+}
+
+.advice-section {
+    background-color: var(--cell-bg);
+    border: 1px solid var(--cell-border);
+    border-radius: 10px;
+    padding: 20px;
+    color: var(--color-text);
+}
+
+.moon_section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(120deg,
+            transparent,
+            rgba(255, 255, 255, 0.4),
+            transparent);
+    transform: skewX(-20deg);
+}
+
+.moon_section:hover::before {
+    animation: shineMove 1s ease forwards;
+}
+
+@keyframes shineMove {
+    from {
+        left: -120%;
+    }
+
+    to {
+        left: 120%;
+    }
+}
+
+.moon-visual img {
+    filter: drop-shadow(0 0 25px rgba(255, 255, 200, 0.5));
+    transition: 0.4s;
+}
+
+.moon_section:hover .moon-visual img {
+    filter: drop-shadow(0 0 45px rgba(255, 255, 180, 0.9));
+    transform: scale(1.05);
+}
+
+.moon-visual img {
+    animation: rotateMoon 60s linear infinite;
+}
+
+@keyframes rotateMoon {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.box {
+    margin: 20px;
+    overflow-x: hidden;
+}
+
+
+
+
+
+
+
+.moon-section2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 20px;
+        position: relative;
+    }
+
+    .moon-visual2 {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    .moon-visual2 img {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    .moon-visual2:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 30px rgba(255,255,255,0.5);
+    }
+
+    /* Glow around moon */
+    .moon-glow {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 220px;
+        height: 220px;
+        margin-left: -110px;
+        margin-top: -110px;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.15);
+        filter: blur(20px);
+        pointer-events: none;
+        animation: glowPulse 3s infinite alternate;
+    }
+
+    @keyframes glowPulse {
+        from { transform: scale(1); opacity: 0.15; }
+        to { transform: scale(1.2); opacity: 0.25; }
+    }
+
+    /* Stars */
+    .star {
+        position: absolute;
+        background: white;
+        border-radius: 50%;
+        opacity: 0.8;
+        z-index: -1;
+        animation: twinkle 2s infinite alternate;
+    }
+
+    @keyframes twinkle {
+        from { opacity: 0.3; }
+        to { opacity: 1; }
+    }
+
+    /* Moon Info */
+    .moon-info2 {
+        color: var(--color-text);
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .moon-info2 h1 { margin: 0; font-size: 2.5em; }
+    .moon-info2 p { margin: 5px 0; }
+
+    /* Calendar */
+    .calendar2 {
+        
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 5px;
+        margin-top: 40px;
+    }
+
+    .calendar2 .day img {
+        width: 40px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    .calendar2 .day img:hover {
+        transform: scale(1.3);
+    }
+
+    /* Tooltip */
+    .tooltip {
+        position: absolute;
+        background: rgba(0,0,0,0.7);
+        color: white;
+        padding: 8px 12px;
+        border-radius: 10px;
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        font-size: 0.9em;
+        max-width: 200px;
+        text-align: center;
+    }

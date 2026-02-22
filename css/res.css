@@ -1,0 +1,324 @@
+/*  350 
+    450
+    650
+    850
+    1050
+    */
+
+@media (max-width :1300px) {
+    nav select {
+        font-size: 12px;
+    }
+
+    .weather .logo {
+        width: 70%;
+        padding-left: 10px;
+
+    }
+
+    /****************header section******************/
+    header .hero__textbox {
+        width: 80%;
+        margin-bottom: 7px;
+    }
+
+    /*****************section******************/
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    .current__location h2 {
+        font-size: 20px;
+    }
+
+    .current__location h6 {
+        font-size: 10px;
+    }
+
+    .dashboard .current__weather .current__temp {
+        font-size: 30px;
+    }
+
+    .dashboard .current__conditions {
+        flex-wrap: wrap;
+    }
+
+    .dashboard .current__conditions .block {
+        width: 40%;
+    }
+
+    .dashboard .daily__forecast {
+
+        flex-wrap: wrap;
+    }
+
+    .dashboard .daily__forecast .block {
+        width: 100%;
+        margin: 7px;
+    }
+
+    header nav.navbar .navbar-brand {
+        width: 25%;
+
+    }
+
+    header nav.navbar .navbar-toggler {
+        background-color: transparent;
+        border-color: #4d688b;
+    }
+
+    header nav.navbar .navbar-toggler span .navbar-toggler-icon {
+        color: #4d658b;
+    }
+
+    header nav.navbar .navbar-toggler[aria-expanded="true"] {
+        box-shadow: none;
+    }
+
+    header nav.navbar .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    header nav.navbar .navbar-collapse .navbar-nav {
+        background-color: rgba(96, 96, 202, 0.304);
+        border-radius: 10px;
+        text-align: center;
+        padding: 10px 0px;
+    }
+
+    header nav.navbar .navbar-collapse .navbar-nav .nav-item {
+        margin: auto;
+        width: 90%;
+
+    }
+
+    .toggle__handler {
+        left: -19px;
+    }
+
+    .toggle__handler.details {
+        left: 3px;
+    }
+
+    .moon_section img {
+        width: 250px;
+    }
+
+    .moon-info h1 {
+        font-size: 20px;
+        color: var(--color-text);
+    }
+
+    header.moon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .moon_section {
+        border: 0px;
+    }
+
+    .advice-section {
+        font-size: 12px;
+    }
+
+    .day {
+        height: 60px;
+        padding: 4px;
+    }
+
+    .day img {
+        width: 15px;
+        height: 15px;
+    }
+
+}
+
+@media (min-width:371px) and (max-width :1300px) {
+    nav select {
+        font-size: 18px;
+    }
+
+    header .hero__button {
+        padding: 7px 20px;
+        font-size: 20px;
+    }
+
+    .dashboard .current__conditions {
+        flex-wrap: wrap;
+    }
+
+    .dashboard .current__conditions .block {
+        width: 30%;
+    }
+
+    .moon_section.row {
+        margin-top: 150px;
+    }
+
+    .moon_section.row img {
+        width: 50%;
+
+    }
+
+    .moon_section img {
+        width: 400px;
+        padding-top: 80px;
+
+    }
+
+    .moon-info {
+        margin-top: 0;
+    }
+
+    .moon-info h1 {
+        font-size: 25px;
+        color: var(--color-text);
+    }
+
+
+
+}
+
+@media (min-width:577px) and (max-width :1300px) {
+
+    /****************header section******************/
+    header .hero__search {
+        display: flex;
+        align-items: center;
+    }
+
+    header .hero__textbox {
+        margin-bottom: 0px;
+        width: 50%;
+        padding: 7px;
+        margin-right: 7px;
+        border-radius: 5px;
+    }
+
+    header .hero__button {
+
+        font-size: 20px;
+    }
+
+    .dashboard .daily__forecast {
+        flex-wrap: wrap;
+    }
+
+    .dashboard .daily__forecast .block {
+        width: calc(50% - 10px);
+        margin: 5px;
+
+    }
+
+    .moon_section {
+        border: 1px solid #D4AF37;
+        border-radius: 10px;
+    }
+
+    .moon_section .moon-visual img {
+        max-width: 350px;
+        padding-top: 0px;
+        margin: 0px;
+
+    }
+
+    .moon-info {
+        padding: 50px;
+    }
+
+    .moon-info h1 {
+        font-size: 25px;
+        color: var(--color-text);
+    }
+
+    .advice-section {
+        overflow: hidden;
+    }
+}
+
+@media (min-width:769px) and (max-width :1300px) {
+    .dashboard .current__conditions {
+        flex-wrap: nowrap;
+    }
+
+    .dashboard .current__conditions .block {
+        width: 25%;
+    }
+
+    .dashboard .daily__forecast {
+        flex-wrap: nowrap;
+    }
+
+    .moon_section.row {
+        overflow-x: hidden;
+        border-radius: 2px;
+        border: 1px solid #D4AF37;
+    }
+
+    .moon_section.row .moon-info {
+        padding: 20px;
+    }
+
+}
+
+@media (min-width:993px) and (max-width :1300px) {
+    header .hero__textbox {
+        width: 25%;
+        padding: 7px;
+        border-radius: 5px;
+    }
+
+    header #carouselExampleFade .carousel-inner .carousel-item .container .carousel-caption p {
+        width: 75%;
+    }
+
+    header nav.navbar .navbar-collapse .navbar-nav {
+        width: initial;
+        background-color: transparent;
+
+    }
+
+    header nav.navbar .navbar-toggler {
+        display: none;
+    }
+
+    header nav.navbar .navbar-collapse .nav-item {
+        margin: initial;
+        margin-right: 10px;
+        width: 100%;
+    }
+
+    .moon_section.row .moon-info {
+        padding: 0px;
+    }
+
+    .moon_section.row {
+        margin-top: 20px;
+    }
+
+}
+
+@media (min-width:1181px) and (max-width :1500px) {
+    header .hero__textbox {
+        width: 25%;
+        padding: 7px;
+        border-radius: 5px;
+    }
+
+    header.moon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .moon_section {
+        border: 1px solid #D4AF37;
+        border-radius: 10px;
+    }
+
+    .moon-info {
+        padding-top: 50px;
+    }
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <!-- 
+    atdence code:
+
+    pta-111
+    pta-001
+    I would like to mention that I was only able to work on this project for three out of the thirty days
+    because I had other work commitments and was under significant pressure. I hope you like the result. Thank you.
+
+    
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/res.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="stars-bg">
+
+    </div>
+
+    <div class="loader-container" id="loader">
+        <div class="loader"></div>
+
+    </div>
+
+    <header>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="img/weather.png" alt="" width="80" height="80"
+                        class="img-fluid"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">
+                                <span class="top"></span>
+                                <span class="middle"></span>
+                                <span class="bottom"></span>
+                                <span class="text">Home</span> </a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="details.html">
+
+                                <span class="top"></span>
+                                <span class="middle"></span>
+                                <span class="bottom"></span>
+                                <span class="text">
+
+                                    Details
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="MOON.html">
+                                <span class="top"></span>
+                                <span class="middle"></span>
+                                <span class="bottom"></span>
+                                <span class="text">
+                                    Moon Phases
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <div>
+                                <!-- From Uiverse.io by mobinkakei -->
+                                <div class="toggleWrapper">
+                                    <input class="input" id="dn" type="checkbox" />
+                                    <label class="toggle" for="dn">
+                                        <span class="toggle__handler">
+                                            <span class="crater crater--1"></span>
+                                            <span class="crater crater--2"></span>
+                                            <span class="crater crater--3"></span>
+                                        </span>
+                                        <span class="star star--1"></span>
+                                        <span class="star star--2"></span>
+                                        <span class="star star--3"></span>
+                                        <span class="star star--4"></span>
+                                        <span class="star star--5"></span>
+                                        <span class="star star--6"></span>
+                                    </label>
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="intro-overlay">
+            <h2 id="introText">Tracking the sky, moment by moment.</h2>
+        </div>
+        <div class="quick-weather container text-center">
+            <div class="row justify-content-center gy-3">
+                <div class="col-6 col-md-3">
+                    <div class="weather-box">
+                        <i class="fa-solid fa-temperature-half"></i>
+                        <p>24°C</p>
+                        <span>Temperature</span>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="weather-box">
+                        <i class="fa-solid fa-wind"></i>
+                        <p>12 km/h</p>
+                        <span>Wind</span>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="weather-box">
+                        <i class="fa-solid fa-droplet"></i>
+                        <p>65%</p>
+                        <span>Humidity</span>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="weather-box">
+                        <i class="fa-solid fa-moon"></i>
+                        <p>Full Moon</p>
+                        <span>Phase</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/details.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+<head>
+    <!-- 
+    atdence code:
+    pta-111
+    pta-001
+    
+    
+    
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/advices.css">
+    <link rel="stylesheet" href="css/res.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+
+    <div class="loader-container" id="loader">
+        <div class="loader"></div>
+
+    </div>
+    <header class="mb-3 moon">
+
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="img/weather.png" alt="" width="80" height="80"
+                        class="img-fluid"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">
+                                <span class="top"></span>
+                                <span class="middle"></span>
+                                <span class="bottom"></span>
+                                <span class="text">Home</span> </a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="details.html">
+
+                                <span class="top"></span>
+                                <span class="middle"></span>
+                                <span class="bottom"></span>
+                                <span class="text">
+
+                                    Details
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="MOON.html">
+                                <span class="top"></span>
+                                <span class="middle"></span>
+                                <span class="bottom"></span>
+                                <span class="text">
+                                    Moon Phases
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <div>
+                                <!-- From Uiverse.io by mobinkakei -->
+                                <div class="toggleWrapper">
+                                    <input class="input" id="dn" type="checkbox" />
+                                    <label class="toggle" for="dn">
+                                        <span class="toggle__handler">
+                                            <span class="crater crater--1"></span>
+                                            <span class="crater crater--2"></span>
+                                            <span class="crater crater--3"></span>
+                                        </span>
+                                        <span class="star star--1"></span>
+                                        <span class="star star--2"></span>
+                                        <span class="star star--3"></span>
+                                        <span class="star star--4"></span>
+                                        <span class="star star--5"></span>
+                                        <span class="star star--6"></span>
+                                    </label>
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class=" d-flex justify-content-center align-items-center flex-column">
+                <div class="moon_section front">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 ">
+                            <div class="moon-visual">
+                                <img src="img/moon.png" alt="Moon" class="img-fluid" />
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6">
+                            <div class="moon-info  ">
+                                <div class="container">
+                                    <h1>FULL MOON</h1>
+                                    <p class="illumination">Illumination: 100%</p>
+                                    <div class="divider"></div>
+                                    <p class="date">The moon shines softly in the night sky. 🌙</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </header>
+    <section class="mb-2">
+        <div class="row box">
+            <div class="col-12 col-md-6 justify-content-center align-items-center d-flex flex-column">
+                <div class="calendar mb-3 " data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <div class="day head">Sun</div>
+                    <div class="day head">Mon</div>
+                    <div class="day head">Tue</div>
+                    <div class="day head">Wed</div>
+                    <div class="day head">Thu</div>
+                    <div class="day head">Fri</div>
+                    <div class="day head">Sat</div>
+
+                    <div class="day empty"></div>
+
+                    <div class="day"><img src="img/new_moon.png" /></div>
+                    <div class="day"><img src="img/waxing_crescent.png" /></div>
+                    <div class="day"><img src="img/first_quarter.png" /></div>
+                    <div class="day"><img src="img/waxing_gibbous.png" /></div>
+                    <div class="day"><img src="img/full_moon.png" /></div>
+                    <div class="day"><img src="img/waning_gibbous.png" /></div>
+                    <div class="day"><img src="img/last_quarter.png" /></div>
+                    <div class="day"><img src="img/waning_crescent.png" /></div>
+                    <div class="day"><img src="img/new_moon.png" /></div>
+                    <div class="day"><img src="img/waxing_crescent.png" /></div>
+                    <div class="day"><img src="img/first_quarter.png" /></div>
+                    <div class="day"><img src="img/waxing_gibbous.png" /></div>
+                    <div class="day"><img src="img/full_moon.png" /></div>
+                    <div class="day"><img src="img/waning_gibbous.png" /></div>
+                    <div class="day"><img src="img/last_quarter.png" /></div>
+                    <div class="day"><img src="img/waning_crescent.png" /></div>
+                    <div class="day"><img src="img/new_moon.png" /></div>
+                    <div class="day"><img src="img/waxing_crescent.png" /></div>
+                    <div class="day"><img src="img/first_quarter.png" /></div>
+                    <div class="day"><img src="img/waxing_gibbous.png" /></div>
+                    <div class="day"><img src="img/full_moon.png" /></div>
+                    <div class="day"><img src="img/waning_gibbous.png" /></div>
+                    <div class="day"><img src="img/last_quarter.png" /></div>
+                    <div class="day"><img src="img/waning_crescent.png" /></div>
+
+                </div>
+            </div>
+            <div class="col-12 col-md-6" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div class="advice-section">
+                    <h2>Advice for Full Moon</h2>
+                    <ul class=" text-start">
+                        <li class="p-1">Embrace the energy: The full moon is a time of heightened energy and
+                            emotions. Use this time to focus on your goals and intentions.</li>
+                        <li>Practice gratitude: Take a moment to reflect on what you are grateful for in your
+                            life.
+                            This can help you attract more positive energy during the full moon.</li>
+                        <li>Release negativity: The full moon is a powerful time for releasing negative energy
+                            and
+                            emotions. Consider writing down anything that is holding you back and then safely
+                            burning the paper to symbolize letting go.</li>
+                        <li>Connect with nature: Spend time outside during the full moon to connect with the
+                            natural
+                            world. This can help you feel more grounded and in tune with the lunar energy.</li>
+                        <li>Set intentions: Use the full moon as an opportunity to set intentions for the coming
+                            month. Write down your goals and aspirations, and visualize them coming to fruition.
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+    <div class="moon-section2">
+        <div class="moon-visual2">
+            <img src="img/moon.png" alt="Moon" class="main-moon">
+            <div class="moon-glow"></div>
+        </div>
+
+        <div class="moon-info2">
+            <h1 id="moonPhaseName">FULL MOON</h1>
+            <p class="illumination" id="moonIllumination">Illumination: 100%</p>
+            <p class="description" id="moonDescription">The moon shines softly in the night sky. 🌙</p>
+        </div>
+
+        <div class="calendar2" id="moonCalendar">
+            <div class="day"><img src="img/new_moon.png" data-phase="New Moon" data-illum="0%"
+                    data-desc="A fresh start. 🌑"></div>
+            <div class="day"><img src="img/waxing_crescent.png" data-phase="Waxing Crescent" data-illum="25%"
+                    data-desc="Build your intentions. 🌒"></div>
+            <div class="day"><img src="img/first_quarter.png" data-phase="First Quarter" data-illum="50%"
+                    data-desc="Time to act on plans. 🌓"></div>
+            <div class="day"><img src="img/waxing_gibbous.png" data-phase="Waxing Gibbous" data-illum="75%"
+                    data-desc="Almost full power. 🌔"></div>
+            <div class="day"><img src="img/full_moon.png" data-phase="Full Moon" data-illum="100%"
+                    data-desc="Energy peak! 🌕"></div>
+            <div class="day"><img src="img/waning_gibbous.png" data-phase="Waning Gibbous" data-illum="75%"
+                    data-desc="Release and reflect. 🌖"></div>
+            <div class="day"><img src="img/last_quarter.png" data-phase="Last Quarter" data-illum="50%"
+                    data-desc="Let go of what’s old. 🌗"></div>
+            <div class="day"><img src="img/waning_crescent.png" data-phase="Waning Crescent" data-illum="25%"
+                    data-desc="Prepare for new cycle. 🌘"></div>
+        </div>
+
+        <div class="tooltip" id="moonTooltip"></div>
+    </div>
+    <section class="lunar-stats" style="padding:50px 20px; background: rgba(0,0,0,0.15); color:#fff;">
+        <h2 style="text-align:center; margin-bottom:30px;">🌙 Lunar Facts & Stats</h2>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper" style="gap:20px;">
+
+                <div class="swiper-slide"
+                    style="background: rgba(255,255,255,0.1); padding:30px; border-radius:15px; text-align:center;">
+                    <h3>🌕 Full Moon</h3>
+                    <p>Occurs roughly once a month</p>
+                </div>
+
+                <div class="swiper-slide"
+                    style="background: rgba(255,255,255,0.1); padding:30px; border-radius:15px; text-align:center;">
+                    <h3>🌑 New Moon</h3>
+                    <p>The Moon is invisible from Earth</p>
+                </div>
+
+                <div class="swiper-slide"
+                    style="background: rgba(255,255,255,0.1); padding:30px; border-radius:15px; text-align:center;">
+                    <h3>🌓 First Quarter</h3>
+                    <p>Half of the Moon is illuminated</p>
+                </div>
+
+                <div class="swiper-slide"
+                    style="background: rgba(255,255,255,0.1); padding:30px; border-radius:15px; text-align:center;">
+                    <h3>🌔 Waxing Gibbous</h3>
+                    <p>More than half illuminated, growing</p>
+                </div>
+
+                <div class="swiper-slide"
+                    style="background: rgba(255,255,255,0.1); padding:30px; border-radius:15px; text-align:center;">
+                    <h3>🌙 Waning Crescent</h3>
+                    <p>Moon is shrinking before New Moon</p>
+                </div>
+
+            </div>
+            <!-- Swiper Pagination -->
+            <div class="swiper-pagination" style="margin-top:20px;"></div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/moon.js"></script>
+    <script src="js/theme.js" defer></script>
+    <script src="js/details.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/advices.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
