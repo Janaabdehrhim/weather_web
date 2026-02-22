@@ -71,7 +71,7 @@ html.light body {
 }
 
 html.light .dashboard .current__weather {
-    background-image: url('/img/AM.png');
+    background-image: url('../img/AM.png');
 }
 
 html.dark .dashboard .current__weather {

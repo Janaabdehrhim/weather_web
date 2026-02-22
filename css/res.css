@@ -123,15 +123,20 @@
         font-size: 12px;
     }
 
-    .day {
-        height: 60px;
-        padding: 4px;
+    .calendar {
+        max-width: 350px;
     }
 
-    .day img {
-        width: 15px;
-        height: 15px;
+    .calendar .day {
+        height: 50px;
+        font-size: 12px;
     }
+
+    .calendar .day img {
+        width: 22px;
+        height: 22px;
+    }
+
 
 }
 
@@ -236,6 +241,20 @@
     .advice-section {
         overflow: hidden;
     }
+
+    .calendar {
+        max-width: 350px;
+    }
+
+    .calendar .day {
+        height: 60px;
+        font-size: 14px;
+    }
+
+    .calendar .day img {
+        width: 30px;
+        height: 30px;
+    }
 }
 
 @media (min-width:769px) and (max-width :1300px) {
@@ -298,6 +317,20 @@
         margin-top: 20px;
     }
 
+    .calendar {
+        max-width: 550px;
+    }
+
+    .calendar .day {
+        height: 80px;
+        font-size: 16px;
+    }
+
+    .calendar .day img {
+        width: 40px;
+        height: 40px;
+    }
+
 }
 
 @media (min-width:1181px) and (max-width :1500px) {
@@ -320,5 +353,19 @@
 
     .moon-info {
         padding-top: 50px;
+    }
+
+    .calendar {
+        max-width: 750px;
+    }
+
+    .calendar .day {
+        height: 80px;
+        font-size: 16px;
+    }
+
+    .calendar .day img {
+        width: 40px;
+        height: 40px;
     }
 }
