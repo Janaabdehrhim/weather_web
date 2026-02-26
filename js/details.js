@@ -41,7 +41,13 @@ async function getGeoData() {
     showLoader();
 
     try {
-        let geoUrl = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(search)}&format=jsonv2&addressdetails=1&countrycodes=eg`;
+        let geoUrl;
+
+        if (search.toLowerCase().includes("egypt") || search === "القاهرة") {
+            geoUrl = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(search)}&format=jsonv2&addressdetails=1&countrycodes=eg`;
+        } else {
+            geoUrl = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(search)}&format=jsonv2&addressdetails=1`;
+        }
 
         let result = await fetchWithRetry(geoUrl, {
             headers: { "Accept-Language": "en", "User-Agent": "WeatherApp/1.0" }
